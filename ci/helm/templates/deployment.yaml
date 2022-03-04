@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: presentacion
+  name: dev-ops-pc
   namespace: {{ .Release.Namespace }}
 spec:
   replicas: 1
@@ -10,24 +10,24 @@ spec:
   template:
     metadata:
       labels:
-        app: presentacion
+        app: dev-ops-pc
     spec:
       securityContext:
         runAsUser: 0
         fsGroup: 200
-      serviceAccountName: presentacion-sa
+      serviceAccountName: dev-ops-pc-sa
       containers:
-        - name: presentacion-cont
-          image: cdocregdes.pronaca.com/aba/presentacion:1.0.0
+        - name: dev-ops-pc-cont
+          image: cdocregdes.pronaca.com/presentacion/dev-ops-pc:1.0.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
           resources:
             requests:
               cpu: 250m
-              memory: 1Gi
+              memory: "1Gi"
             limits:
-              cpu: 500m
-              memory: 1Gi
+              cpu: 250m
+              memory: "1Gi"
       imagePullSecrets:
       - name: registry-private
