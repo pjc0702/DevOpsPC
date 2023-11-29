@@ -1,33 +1,7 @@
 {
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "test",
-          "lint"
-        ],
-        "accessToken": "NmQ2MTE2YjctZGYwZC00MjIzLTg1YjQtOWQ2YjNlNzYwYWVmfHJlYWQtd3JpdGU="
-      }
-    }
-  },
-  "defaultBase": "develop",
-  "namedInputs": {
-    "sharedGlobals": [],
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "production": [
-      "default",
-      "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/**/*.spec.[jt]s",
-      "!{projectRoot}/karma.conf.js"
-    ]
-  },
   "targetDefaults": {
     "build": {
+      "cache": true,
       "dependsOn": [
         "^build"
       ],
@@ -37,23 +11,27 @@
       ]
     },
     "test": {
-      "inputs": [
-        "default",
-        "^production",
-        "{workspaceRoot}/karma.conf.js"
-      ]
-    },
-    "lint": {
-      "inputs": [
-        "default"
-      ]
-    },
-    "e2e": {
+      "cache": true,
       "inputs": [
         "default",
         "^production"
       ]
     }
   },
-  "defaultProject": "DevOpsPC"
+  "affected": {
+    "defaultBase": "develop"
+  },
+  "namedInputs": {
+    "sharedGlobals": [],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "production": [
+      "default",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/**/*.spec.[jt]s"
+    ]
+  },
+  "nxCloudAccessToken": "Y2JiM2FhZjMtZDhhMS00OWE3LTkwYWEtZTFmODc5ZjI1Y2YwfHJlYWQtd3JpdGU="
 }

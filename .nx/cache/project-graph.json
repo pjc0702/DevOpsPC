@@ -1,0 +1,199 @@
+{
+  "nodes": {
+    "front-angular": {
+      "name": "front-angular",
+      "type": "app",
+      "data": {
+        "root": ".",
+        "name": "front-angular",
+        "targets": {
+          "ng": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "ng"
+            },
+            "configurations": {}
+          },
+          "start": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "start"
+            },
+            "configurations": {}
+          },
+          "build": {
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@angular-devkit/build-angular:application",
+            "options": {
+              "outputPath": "dist/front-angular",
+              "index": "src/index.html",
+              "browser": "src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "tsconfig.app.json",
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ],
+              "styles": [
+                "src/styles.css"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "optimization": false,
+                "extractLicenses": false,
+                "sourceMap": true
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "test": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@angular-devkit/build-angular:karma",
+            "options": {
+              "polyfills": [
+                "zone.js",
+                "zone.js/testing"
+              ],
+              "tsConfig": "tsconfig.spec.json",
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ],
+              "styles": [
+                "src/styles.css"
+              ],
+              "scripts": []
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "lint"
+            },
+            "configurations": {}
+          },
+          "e2e": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "e2e"
+            },
+            "configurations": {}
+          },
+          "version": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "version"
+            },
+            "configurations": {}
+          },
+          "name": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "name"
+            },
+            "configurations": {}
+          },
+          "dockerRegistry": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dockerRegistry"
+            },
+            "configurations": {}
+          },
+          "test:unit": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "test:unit"
+            },
+            "configurations": {}
+          },
+          "cover": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "cover"
+            },
+            "configurations": {}
+          },
+          "build:ci": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:ci"
+            },
+            "configurations": {}
+          },
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "front-angular:build:production"
+              },
+              "development": {
+                "buildTarget": "front-angular:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {}
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "buildTarget": "front-angular:build"
+            },
+            "configurations": {}
+          }
+        },
+        "$schema": "node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "generators": {},
+        "sourceRoot": "src",
+        "prefix": "app",
+        "implicitDependencies": [],
+        "tags": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "front-angular": []
+  },
+  "version": "6.0"
+}

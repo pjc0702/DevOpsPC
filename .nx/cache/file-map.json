@@ -1,0 +1,253 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^16.2.10",
+    "@angular-devkit/core": "^17.0.2",
+    "@angular-devkit/schematics": "^17.0.2",
+    "@angular/cli": "^17.0.2",
+    "@angular/compiler-cli": "^17.0.0",
+    "@nx/angular": "17.1.3",
+    "@nx/workspace": "17.1.3",
+    "@schematics/angular": "^17.0.2",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "nx": "17.1.3",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "front-angular": [
+        {
+          "file": ".angulardoc.json",
+          "hash": "400599360748397381"
+        },
+        {
+          "file": ".browserslistrc",
+          "hash": "6506999527826631390"
+        },
+        {
+          "file": ".editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": ".nx/cache/d/daemon.log",
+          "hash": "10974317115268539455"
+        },
+        {
+          "file": ".nx/cache/d/server-process.json",
+          "hash": "16609858936965224207"
+        },
+        {
+          "file": ".nx/cache/file-map.json",
+          "hash": "13719371264602471706"
+        },
+        {
+          "file": ".nx/cache/lockfile.hash",
+          "hash": "14177595189638814376"
+        },
+        {
+          "file": ".nx/cache/parsed-lock-file.json",
+          "hash": "10441287385763544859"
+        },
+        {
+          "file": ".nx/cache/project-graph.json",
+          "hash": "13382145296283620138"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "15883812518955311972"
+        },
+        {
+          "file": ".vscode/settings.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "README.md",
+          "hash": "17660439679150959362"
+        },
+        {
+          "file": "e2e/protractor.conf.js",
+          "hash": "13644070990988817146",
+          "deps": [
+            "npm:jasmine-spec-reporter",
+            "npm:path"
+          ]
+        },
+        {
+          "file": "e2e/src/app.e2e-spec.ts",
+          "hash": "10345892561402436567",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "e2e/src/app.po.ts",
+          "hash": "11690061893233166361",
+          "deps": [
+            "npm:protractor"
+          ]
+        },
+        {
+          "file": "e2e/tsconfig.json",
+          "hash": "1688746392828365718"
+        },
+        {
+          "file": "karma.conf.js",
+          "hash": "4454876925163450874",
+          "deps": [
+            [
+              "npm:karma-jasmine",
+              "dynamic"
+            ],
+            [
+              "npm:karma-chrome-launcher",
+              "dynamic"
+            ],
+            [
+              "npm:karma-jasmine-html-reporter",
+              "dynamic"
+            ],
+            [
+              "npm:karma-coverage-istanbul-reporter",
+              "dynamic"
+            ],
+            [
+              "npm:@angular-devkit/build-angular",
+              "dynamic"
+            ],
+            [
+              "npm:karma-junit-reporter",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "17525055417595673277"
+        },
+        {
+          "file": "package.json",
+          "hash": "10185899252062942322"
+        },
+        {
+          "file": "project.json",
+          "hash": "9501670805834312022"
+        },
+        {
+          "file": "sonar-project.properties",
+          "hash": "7449829282263333010"
+        },
+        {
+          "file": "src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "11434932228744866139"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "12082784065464137640"
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "1497296171268212262"
+        },
+        {
+          "file": "src/app/app.module.ts",
+          "hash": "4352595245486309177"
+        },
+        {
+          "file": "src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/environments/environment.prod.ts",
+          "hash": "5406836414239361753"
+        },
+        {
+          "file": "src/environments/environment.ts",
+          "hash": "5207092130812246610"
+        },
+        {
+          "file": "src/favicon.ico",
+          "hash": "3464744996580215640"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "17550008210885060950"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "10677612470474905821"
+        },
+        {
+          "file": "src/polyfills.ts",
+          "hash": "3321082383016944618",
+          "deps": [
+            "npm:zone.js/dist/zone"
+          ]
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "src/test.ts",
+          "hash": "10610531122565839209",
+          "deps": [
+            "npm:zone.js/dist/zone-testing"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "17337579397915052279"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "16293224108727121365"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "8074232012119176151"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "15575553540147145788"
+        },
+        {
+          "file": "tslint.json",
+          "hash": "17007409249902234499"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}
