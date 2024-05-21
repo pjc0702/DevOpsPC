@@ -12,6 +12,9 @@
     "@angular/router": "^17.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "vite": "^5.2.11",
+    "webpack": "^5.91.0",
+    "webpack-dev-middleware": "^7.2.1",
     "zone.js": "~0.14.2",
     "@angular-devkit/build-angular": "^16.2.10",
     "@angular-devkit/core": "^17.0.2",
@@ -34,8 +37,9 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
+    "nonProjectFiles": [],
     "projectFileMap": {
-      "front-angular": [
+      "DevOpsPC": [
         {
           "file": ".angulardoc.json",
           "hash": "400599360748397381"
@@ -50,262 +54,7 @@
         },
         {
           "file": ".gitignore",
-          "hash": "4689145951703824387"
-        },
-        {
-          "file": ".nx/cache/cloud/2311.09.8.hotfix7/index.js",
-          "hash": "3955423335100330750",
-          "deps": [
-            "npm:os",
-            "npm:assert",
-            "npm:buffer",
-            "npm:zlib",
-            "npm:events",
-            "npm:fs",
-            "npm:path",
-            [
-              "npm:fs",
-              "dynamic"
-            ],
-            [
-              "npm:path",
-              "dynamic"
-            ],
-            [
-              "npm:os",
-              "dynamic"
-            ],
-            [
-              "npm:child_process",
-              "dynamic"
-            ],
-            [
-              "npm:crypto",
-              "dynamic"
-            ],
-            [
-              "npm:tty",
-              "dynamic"
-            ],
-            [
-              "npm:util",
-              "dynamic"
-            ],
-            [
-              "npm:url",
-              "dynamic"
-            ],
-            [
-              "npm:http",
-              "dynamic"
-            ],
-            [
-              "npm:https",
-              "dynamic"
-            ],
-            [
-              "npm:stream",
-              "dynamic"
-            ],
-            [
-              "npm:assert",
-              "dynamic"
-            ],
-            [
-              "npm:zlib",
-              "dynamic"
-            ],
-            [
-              "npm:perf_hooks",
-              "dynamic"
-            ],
-            [
-              "npm:events",
-              "dynamic"
-            ],
-            [
-              "npm:string_decoder",
-              "dynamic"
-            ],
-            [
-              "npm:constants",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": ".nx/cache/cloud/2311.09.8.hotfix7/lib/daemon/process-run-end.js",
-          "hash": "4387998712489105129",
-          "deps": [
-            "npm:path",
-            "npm:os",
-            "npm:assert",
-            "npm:buffer",
-            "npm:zlib",
-            "npm:events",
-            "npm:fs",
-            [
-              "npm:fs",
-              "dynamic"
-            ],
-            [
-              "npm:path",
-              "dynamic"
-            ],
-            [
-              "npm:os",
-              "dynamic"
-            ],
-            [
-              "npm:child_process",
-              "dynamic"
-            ],
-            [
-              "npm:crypto",
-              "dynamic"
-            ],
-            [
-              "npm:tty",
-              "dynamic"
-            ],
-            [
-              "npm:util",
-              "dynamic"
-            ],
-            [
-              "npm:url",
-              "dynamic"
-            ],
-            [
-              "npm:http",
-              "dynamic"
-            ],
-            [
-              "npm:https",
-              "dynamic"
-            ],
-            [
-              "npm:stream",
-              "dynamic"
-            ],
-            [
-              "npm:assert",
-              "dynamic"
-            ],
-            [
-              "npm:zlib",
-              "dynamic"
-            ],
-            [
-              "npm:perf_hooks",
-              "dynamic"
-            ],
-            [
-              "npm:events",
-              "dynamic"
-            ],
-            [
-              "npm:string_decoder",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": ".nx/cache/cloud/2311.09.8.hotfix7/lib/heartbeat/heartbeat-process.js",
-          "hash": "5633484099946442012",
-          "deps": [
-            "npm:os",
-            "npm:fs",
-            "npm:path",
-            [
-              "npm:fs",
-              "dynamic"
-            ],
-            [
-              "npm:path",
-              "dynamic"
-            ],
-            [
-              "npm:os",
-              "dynamic"
-            ],
-            [
-              "npm:child_process",
-              "dynamic"
-            ],
-            [
-              "npm:crypto",
-              "dynamic"
-            ],
-            [
-              "npm:tty",
-              "dynamic"
-            ],
-            [
-              "npm:util",
-              "dynamic"
-            ],
-            [
-              "npm:url",
-              "dynamic"
-            ],
-            [
-              "npm:http",
-              "dynamic"
-            ],
-            [
-              "npm:https",
-              "dynamic"
-            ],
-            [
-              "npm:stream",
-              "dynamic"
-            ],
-            [
-              "npm:assert",
-              "dynamic"
-            ],
-            [
-              "npm:zlib",
-              "dynamic"
-            ],
-            [
-              "npm:perf_hooks",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": ".nx/cache/cloud/2311.09.8.hotfix7/package.json",
-          "hash": "13582502500599697976"
-        },
-        {
-          "file": ".nx/cache/cloud/verify.lock",
-          "hash": "4891450805632419492"
-        },
-        {
-          "file": ".nx/cache/d/daemon.log",
-          "hash": "3692870204757725165"
-        },
-        {
-          "file": ".nx/cache/d/server-process.json",
-          "hash": "4843412780344268317"
-        },
-        {
-          "file": ".nx/cache/file-map.json",
-          "hash": "18192841080510040814"
-        },
-        {
-          "file": ".nx/cache/lockfile.hash",
-          "hash": "14177595189638814376"
-        },
-        {
-          "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "7285792848529949819"
-        },
-        {
-          "file": ".nx/cache/project-graph.json",
-          "hash": "3271888046981415948"
+          "hash": "9885577673360660274"
         },
         {
           "file": ".vscode/extensions.json",
@@ -318,6 +67,10 @@
         {
           "file": "README.md",
           "hash": "11678868275894294027"
+        },
+        {
+          "file": "angular.json",
+          "hash": "8005151813976718236"
         },
         {
           "file": "e2e/protractor.conf.js",
@@ -386,11 +139,44 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "11084880774710915428"
+          "hash": "2904278899112802900"
         },
         {
           "file": "package.json",
-          "hash": "10185899252062942322"
+          "hash": "9522261484351428125",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:vite",
+            "npm:webpack",
+            "npm:webpack-dev-middleware",
+            "npm:zone.js",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-devkit/core",
+            "npm:@angular-devkit/schematics",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@nx/angular",
+            "npm:@nx/workspace",
+            "npm:@schematics/angular",
+            "npm:@types/jasmine",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:nx",
+            "npm:typescript"
+          ]
         },
         {
           "file": "project.json",
@@ -499,7 +285,6 @@
           "hash": "15478660608154121528"
         }
       ]
-    },
-    "nonProjectFiles": []
+    }
   }
 }

@@ -31,6 +31,9 @@
     "@angular/router": "^17.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "vite": "^5.2.11",
+    "webpack": "^5.91.0",
+    "webpack-dev-middleware": "^7.2.1",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
