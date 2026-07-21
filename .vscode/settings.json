@@ -1,1 +1,11 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "nodemon.json"
+      ],
+      "url": "https://json.schemastore.org/nodemon.json"
+    }
+  ]
+}
 {}
