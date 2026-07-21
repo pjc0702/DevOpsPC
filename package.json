@@ -46,7 +46,8 @@
     "vite": "^6.0.9",
     "webpack": "^5.94.0",
     "webpack-dev-middleware": "^7.2.1",
-    "zone.js": "~0.16.2"
+    "zone.js": "~0.16.2",
+    "axios": "1.18.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^22.0.7",
@@ -55,8 +56,8 @@
     "@angular/build": "^22.0.7",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^22.0.7",
-    "@nx/angular": "^22.6.3",
-    "@nx/workspace": "^22.6.3",
+    "@nx/angular": "^23.1.0",
+    "@nx/workspace": "^23.1.0",
     "@schematics/angular": "^22.0.7",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
@@ -67,7 +68,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "karma-junit-reporter": "^2.0.1",
-    "nx": "^22.6.3",
+    "nx": "23.1.0",
     "typescript": "~6.0.3"
   },
   "allowScripts": {
@@ -78,6 +79,6 @@
     "@parcel/watcher@2.6.0": true,
     "lmdb@3.5.4": true,
     "msgpackr-extract@3.0.4": true,
-    "nx@22.7.7": true
+    "nx@23.1.0": true
   }
 }
