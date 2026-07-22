@@ -80,5 +80,9 @@
     "lmdb@3.5.4": true,
     "msgpackr-extract@3.0.4": true,
     "nx@23.1.0": true
+  },
+  "overrides": {
+    "uuid": "^14.0.0",
+    "webpack-dev-server": "^5.2.4"
   }
 }

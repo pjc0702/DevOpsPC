@@ -33,5 +33,6 @@
       "!{projectRoot}/**/*.spec.[jt]s"
     ]
   },
-  "nxCloudAccessToken": "Y2JiM2FhZjMtZDhhMS00OWE3LTkwYWEtZTFmODc5ZjI1Y2YwfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "Y2JiM2FhZjMtZDhhMS00OWE3LTkwYWEtZTFmODc5ZjI1Y2YwfHJlYWQtd3JpdGU=",
+  "analytics": true
 }
