@@ -47,7 +47,7 @@
     "webpack": "^5.94.0",
     "webpack-dev-middleware": "^7.2.1",
     "zone.js": "~0.16.2",
-    "axios": "1.18.1"
+    "axios": "^1.18.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^22.0.7",
@@ -83,6 +83,8 @@
   },
   "overrides": {
     "uuid": "^14.0.0",
-    "webpack-dev-server": "^5.2.4"
+    "webpack-dev-server": "^5.2.4",
+    "axios": "^1.18.1",
+    "@hono/node-server": "^2.0.10"
   }
 }
