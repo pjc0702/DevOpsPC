@@ -2,18 +2,15 @@
   "name": "dev-ops-pc",
   "version": "0.0.1",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "start": "nx run front-angular:serve",
+    "build": "nx run front-angular:build",
+    "test": "nx run front-angular:test",
     "version": "echo $npm_package_version",
     "name": "echo $npm_package_name",
     "dockerRegistry": "echo $npm_package_publishConfig_dockerRegistry",
-    "test:unit": "ng test --no-watch --browsers=ChromeHeadless --no-progress",
-    "cover": "ng test --watch=false --code-coverage=true",
-    "build:ci": "ng build --configuration production --aot --build-optimizer --progress=false --base-href ./"
+    "test:unit": "nx run front-angular:test --watch=false --browsers=ChromeHeadless --progress=false",
+    "cover": "nx run front-angular:test --watch=false --code-coverage=true",
+    "build:ci": "nx run front-angular:build --configuration=production --base-href=./"
   },
   "publishConfig": {
     "registry": "https://cdnxpro.pronaca.com/repository/npm-hosted/",
@@ -53,7 +50,6 @@
     "@angular-devkit/core": "^22.0.7",
     "@angular-devkit/schematics": "^22.0.7",
     "@angular/build": "^22.0.7",
-    "@angular/cli": "^21.2.26",
     "@angular/compiler-cli": "^22.0.7",
     "@nx/angular": "^23.3.0",
     "@nx/workspace": "^23.3.0",
